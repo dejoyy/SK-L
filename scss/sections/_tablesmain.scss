@@ -1,0 +1,262 @@
+ .tables {
+  padding-top: 133px;
+  padding-bottom: 141px;
+  position: relative;
+  overflow: hidden;
+
+  &__maingr {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0)   0%,
+        rgba(0, 0, 0, 0.4) 70%,
+        rgba(0, 0, 0, 0.10) 100%
+      ),
+      url("../img/bg-mainsecond.png");
+    top:   -192px;
+    right: -192px;
+    bottom:-192px;
+    left:  -192px;
+    filter: blur(40px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  &__line {
+    position: absolute;
+    top: 983px;
+  }
+
+  &__block {
+    border: 1px solid #D19722;
+    background: rgba(24, 27, 22, 0.90);
+    padding: 16px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 319px;
+    height: 82px;
+  }
+
+  &__ratesize {
+    width: 129px;
+    height: 39px;
+  }
+
+  &__ratebtn {
+    border: none;
+    background: none;
+  }
+
+  &__number {
+    color: #D3C9BF;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.26px;
+  }
+
+  &__rateblock {
+    border-right: 1px solid #D19722;
+    border-left: 1px solid #D19722;
+    background: rgba(24, 27, 22, 0.90);
+    display: flex;
+    padding: 24px 20px;
+    gap: 129px;
+    width: 319px;
+    height: 319px;
+  }
+
+  &__minigroup {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__listfirst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+  }
+
+  &__imgnum {
+    width: 31px;
+    height: 32px;
+  }
+
+  &__listsecond {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    color: #D3C9BF;
+    font-family: "Noto Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.26px;
+  }
+  &__text:nth-child(1) { margin-bottom: 22px; }
+  &__text:nth-child(2),
+  &__text:nth-child(3),
+  &__text:nth-child(4) { margin-bottom: 32px; }
+  &__text:nth-child(5) { margin-bottom: 32px; }
+
+  &__listthirdth {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__underblock {
+    display: flex;
+  }
+
+  &__bords {
+    border: 1px solid #D19722;
+    background: rgba(24, 27, 22, 0.90);
+    padding: 19px;
+  }
+
+  &__title {
+    color: #FFF;
+    font-family: "Noto Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 34px;
+  }
+}
+
+
+
+.nexttable {
+  &__firstblock {
+    border-top: 1px solid #D19722;
+    border-right: 1px solid #D19722;
+    border-left: 1px solid #D19722;
+    background: rgba(24, 27, 22, 0.90);
+    padding: 24px 187px 24px 24px;
+    width: 317px;
+  }
+
+  &__title {
+    color: #FFF;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.4px;
+  }
+
+  &__scondblock {
+    border: 1px solid #D19722;
+    background: rgba(24, 27, 22, 0.90);
+    padding: 24px 0 9px 24px;
+    width: 317px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__lichki {
+    display: flex;
+    gap: 9px;
+  }
+
+  &__romb {
+    width: 11px;
+    height: 15px;
+  }
+
+  &__text {
+    color: #D3C9BF;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    margin-bottom: 7px;
+  }
+
+  &__time {
+    color: #D3C9BF;
+    font-family: "Noto Sans";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.22px;
+  }
+
+  &__downblock {
+    border-right: 1px solid #D19722;
+    border-bottom: 1px solid #D19722;
+    border-left: 1px solid #D19722;
+    background: rgba(24, 27, 22, 0.90);
+    padding: 20px 74px;
+    width: 317px;
+  }
+
+  &__btnforum {
+    border: none;
+    background: none;
+    width: 174px;
+    height: 26px;
+  }
+}
+
+
+.lasttable {
+  &__title {
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.35px;
+    margin-bottom: 12px;
+  }
+  
+  &__socialtext {
+    color: #FFF;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.40px;
+    margin-top: 12px;
+    margin-bottom: 21px;
+  }
+
+  &__sociallist {
+    display: flex;
+    gap: 21px;
+  }
+
+  &__socialicon {
+    width: 50px;
+    height: 53px;
+  }
+}
