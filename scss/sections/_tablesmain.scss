@@ -1,6 +1,6 @@
  .tables {
-  padding-top: 133px;
-  padding-bottom: 141px;
+  padding-top: 108px;
+  padding-bottom: 100px;
   position: relative;
   overflow: hidden;
 
@@ -22,10 +22,10 @@
         rgba(0, 0, 0, 0.10) 100%
       ),
       url("../img/bg-mainsecond.png");
-    top:   -192px;
-    right: -192px;
-    bottom:-192px;
-    left:  -192px;
+    top:   -130px;
+    right: -130px;
+    bottom:-130px;
+    left:  -130px;
     filter: blur(40px);
     background-position: center;
     background-repeat: no-repeat;
@@ -41,18 +41,18 @@
   &__block {
     border: 1px solid #D19722;
     background: rgba(24, 27, 22, 0.90);
-    padding: 16px 35px;
+    padding: 18px 38px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    width: 319px;
-    height: 82px;
+    gap: 9px;
+    width: 365px;
+    height: 90px;
   }
 
   &__ratesize {
-    width: 129px;
-    height: 39px;
+    width: 142px;
+    height: 31px;
   }
 
   &__ratebtn {
@@ -63,10 +63,10 @@
   &__number {
     color: #D3C9BF;
     font-family: "Noto Sans";
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.26px;
+    letter-spacing: 0.29px;
   }
 
   &__rateblock {
@@ -74,27 +74,26 @@
     border-left: 1px solid #D19722;
     background: rgba(24, 27, 22, 0.90);
     display: flex;
-    padding: 24px 20px;
-    gap: 129px;
-    width: 319px;
-    height: 319px;
+    padding: 26px 22px;
+    gap: 142px;
+    width: 365px;
   }
 
   &__minigroup {
     display: flex;
-    gap: 15px;
+    gap: 17px;
   }
 
   &__listfirst {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 15px;
+    row-gap: 17px;
   }
 
   &__imgnum {
-    width: 31px;
-    height: 32px;
+    width: 35px;
+    height: 36px;
   }
 
   &__listsecond {
@@ -105,16 +104,16 @@
   &__text {
     color: #D3C9BF;
     font-family: "Noto Sans";
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.26px;
+    letter-spacing: 0.29px;
   }
-  &__text:nth-child(1) { margin-bottom: 22px; }
+  &__text:nth-child(1) { margin-bottom: 24px; }
   &__text:nth-child(2),
   &__text:nth-child(3),
-  &__text:nth-child(4) { margin-bottom: 32px; }
-  &__text:nth-child(5) { margin-bottom: 32px; }
+  &__text:nth-child(4) { margin-bottom: 35px; }
+  &__text:nth-child(5) { margin-bottom: 35px; }
 
   &__listthirdth {
     display: flex;
@@ -129,23 +128,27 @@
   &__bords {
     border: 1px solid #D19722;
     background: rgba(24, 27, 22, 0.90);
-    padding: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91.25px;
+height: 80px;
   }
 
   &__title {
     color: #FFF;
     font-family: "Noto Sans";
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.26px;
+    letter-spacing: 0.29px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 34px;
+    width: 42px;
   }
 }
+
 
 
 
@@ -155,59 +158,59 @@
     border-right: 1px solid #D19722;
     border-left: 1px solid #D19722;
     background: rgba(24, 27, 22, 0.90);
-    padding: 24px 187px 24px 24px;
-    width: 317px;
+    padding: 29px 206px 28px 26px;
+    width: 365px;
   }
 
   &__title {
     color: #FFF;
     font-family: "Noto Sans";
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.45px;
   }
 
   &__scondblock {
     border: 1px solid #D19722;
     background: rgba(24, 27, 22, 0.90);
-    padding: 24px 0 9px 24px;
-    width: 317px;
+    padding: 26px 0 10px 26px;
+    width: 365px;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 17px;
   }
 
   &__lichki {
     display: flex;
-    gap: 9px;
+    gap: 10px;
   }
 
   &__romb {
-    width: 11px;
-    height: 15px;
+    width: 12px;
+    height: 17px;
   }
 
   &__text {
     color: #D3C9BF;
     font-family: "Noto Sans";
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.3px;
-    margin-bottom: 7px;
+    letter-spacing: 0.35px;
+    margin-bottom: 8px;
   }
 
   &__time {
     color: #D3C9BF;
     font-family: "Noto Sans";
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.22px;
+    letter-spacing: 0.25px;
   }
 
   &__downblock {
@@ -215,15 +218,21 @@
     border-bottom: 1px solid #D19722;
     border-left: 1px solid #D19722;
     background: rgba(24, 27, 22, 0.90);
-    padding: 20px 74px;
-    width: 317px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 365px;
+    height: 80px;
   }
 
   &__btnforum {
     border: none;
     background: none;
-    width: 174px;
-    height: 26px;
+  }
+  
+  &__sizebtn {
+    width: 210px;
+height: 30px;
   }
 }
 
@@ -232,11 +241,11 @@
   &__title {
     color: #FFF;
     font-family: "Inter";
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.35px;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
   }
   
   &__socialtext {
@@ -246,17 +255,17 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.40px;
-    margin-top: 12px;
-    margin-bottom: 21px;
+    margin-top: 26px;
+    margin-bottom: 31px;
   }
 
   &__sociallist {
     display: flex;
-    gap: 21px;
+    gap: 23px;
   }
 
   &__socialicon {
-    width: 50px;
-    height: 53px;
+    width: 55px;
+    height: 56px;
   }
 }
