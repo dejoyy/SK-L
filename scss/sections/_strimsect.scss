@@ -1,0 +1,60 @@
+.strimsect {
+    background: #111117;
+    padding-top: 45px;
+    padding-bottom: 79px;
+
+    &__linesecond {
+        position: absolute;
+        height: 25px;
+    }
+
+    &__firstgroup {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        color: #FFF;
+font-family: "Inter";
+font-size: 17px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.36px;
+margin-top: 5px;
+    }
+
+
+    &__addbtn {
+        color: #FFF;
+font-family: "Inter";
+font-size: 17px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.36px;
+border-radius: 2.5px;
+border: 1px solid #FFF;
+background: #000;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+padding: 11px 35px;
+    }
+
+
+    &__addgroup {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__square {
+        border-radius: 0.375px;
+border: 2px solid #FFF;
+background: #000;
+padding: 69px 118px;
+    }
+
+    &__plusimg {
+        width: 32px;
+height: 31px;
+    }
+
+}
