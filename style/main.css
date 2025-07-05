@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul {
   list-style: none;
   margin: 0;
@@ -20,23 +21,24 @@ h1, h2, h3, p {
 }
 
 .container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 15px;
 }
-@media screen and (min-width: 480px) {
+@media (max-width: 1919px) {
   .container {
-    width: 480px;
+    max-width: 1200px;
   }
 }
-@media screen and (min-width: 768px) {
+@media (max-width: 1199px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (max-width: 767px) {
   .container {
-    width: 1200px;
+    max-width: 480px;
   }
 }
 
@@ -540,6 +542,123 @@ body {
 .lasttable__socialicon {
   width: 55px;
   height: 56px;
+}
+
+/* Общий контейнер */
+#discord-widget {
+  width: 350px;
+  background: #2C2F33;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: "Noto Sans", sans-serif;
+  color: #FFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  margin: 0 auto;
+}
+
+/* Header */
+.dw-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5865F2;
+  padding: 10px 16px;
+}
+
+.dw-logo {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dw-count {
+  font-size: 12px;
+}
+
+.dw-logo {
+  margin-left: 3px;
+}
+
+.up-header {
+  display: flex;
+  align-items: center;
+}
+
+.icon-header {
+  width: 30px;
+  height: 30px;
+  fill: #FFF;
+}
+
+/* Body */
+.dw-body {
+  max-height: 220px;
+  overflow-y: auto;
+  background: #23272A;
+  padding: 12px 16px;
+}
+
+.dw-section-title {
+  font-size: 10px;
+  color: #99AAB5;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dw-members-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dw-members-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.dw-members-list li:last-child {
+  margin-bottom: 0;
+}
+
+.dw-members-list img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Footer */
+.dw-footer {
+  padding: 10px 2px;
+  background: #2C2F33;
+  text-align: end;
+}
+
+.dw-join-btn {
+  background: #3e4146;
+  color: #FFF;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 5px 16px;
+  font-weight: 500;
+}
+
+.dw-join-btn:hover {
+  background: #5b6eae;
+}
+
+.dw-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dw-body::-webkit-scrollbar-track {
+  background: #23272A;
+}
+
+.dw-body {
+  scrollbar-width: thin;
+  scrollbar-color: #5b5b64 #23272A;
 }
 
 .strimsect {
