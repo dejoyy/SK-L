@@ -40,12 +40,6 @@ h1, h2, h3, p {
     width: 1200px;
   }
 }
-@media screen and (min-width: 1600px) {
-  .container {
-    width: 1600px;
-    padding: 0 20px;
-  }
-}
 @media screen and (min-width: 1920px) {
   .container {
     width: 1920px;
