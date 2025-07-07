@@ -21,24 +21,35 @@ h1, h2, h3, p {
 }
 
 .container {
-  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 15px;
 }
-@media (max-width: 1919px) {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 1200px;
+    width: 480px;
   }
 }
-@media (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
-@media (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 480px;
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1600px;
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    width: 1920px;
+    padding: 0 30px;
   }
 }
 
@@ -178,6 +189,7 @@ body {
 .bloks {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .bloks__strucrut {
   position: relative;
@@ -342,6 +354,7 @@ body {
 }
 .tables__line {
   position: absolute;
+  width: 100%;
   top: 983px;
 }
 .tables__block {
@@ -669,7 +682,8 @@ body {
 }
 .strimsect__linesecond {
   position: absolute;
-  height: 25px;
+  top: 1695px;
+  width: 100%;
 }
 .strimsect__firstgroup {
   display: flex;
@@ -700,7 +714,9 @@ body {
 }
 .strimsect__addgroup {
   display: flex;
+  align-items: center;
   gap: 30px;
+  justify-content: center;
 }
 .strimsect__square {
   border-radius: 0.375px;

@@ -5,7 +5,8 @@
 
     &__linesecond {
         position: absolute;
-        height: 25px;
+        top: 1695px;
+        width: 100%;
     }
 
     &__firstgroup {
@@ -42,7 +43,9 @@ padding: 11px 35px;
 
     &__addgroup {
         display: flex;
+        align-items: center;
         gap: 30px;
+        justify-content: center;
     }
 
     &__square {
