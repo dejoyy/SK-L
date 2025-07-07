@@ -177,6 +177,7 @@ body {
 
 .bloks {
   display: flex;
+  align-items: center;
 }
 .bloks__strucrut {
   position: relative;
@@ -317,11 +318,11 @@ body {
   padding-top: 108px;
   padding-bottom: 100px;
   position: relative;
-  overflow: hidden;
 }
 .tables__maingr {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
 }
 .tables::before {
