@@ -328,7 +328,6 @@ body {
 .tables__maingr {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 40px;
 }
 .tables::before {
