@@ -85,6 +85,10 @@ body {
   color: #FFB846;
   text-shadow: 0px 1px 43px #FFB846;
 }
+.header__focus {
+  color: #FFB846;
+  text-shadow: 0px 1px 43px #FFB846;
+}
 .header__reglist {
   display: flex;
   gap: 17px;
@@ -121,8 +125,7 @@ body {
   font-weight: 700;
   background: #0E0E1A;
   transition: 800ms;
-  -webkit-clip-path: polygon(0% 50%, 10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%);
-          clip-path: polygon(0% 50%, 10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%);
+  clip-path: polygon(0% 50%, 10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%);
 }
 .header__registbtn:active {
   scale: 0.92;
@@ -785,4 +788,592 @@ body {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.24px;
+}
+
+.file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 40px;
+  background: rgba(17, 17, 23, 0.77);
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+}
+.file__img {
+  width: 181px;
+  height: 74px;
+  position: absolute;
+  top: -35px;
+}
+.file__title {
+  color: #FFB82F;
+  font-family: "Inter";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  margin-bottom: 40px;
+}
+.file__text {
+  color: #FFF;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  width: 881px;
+  height: 144px;
+}
+
+.fils {
+  padding-top: 175px;
+  padding-bottom: 110px;
+  background-image: url(../img/bg-main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.fils__position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.fils__title {
+  width: 739px;
+  color: #FFB82F;
+  text-shadow: 0px 0px 50px #000;
+  font-family: "Noto Sans";
+  font-size: 30px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin-bottom: 17px;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fils__playbtn {
+  border: none;
+  background: none;
+  text-align: center;
+}
+.fils__playimg {
+  width: 270px;
+  height: 65px;
+}
+.fils__line {
+  position: absolute;
+  top: 1090px;
+}
+
+.downlod {
+  background-color: #111117;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+.downlod__secondstep {
+  position: absolute;
+  top: -40px;
+  width: 184px;
+  height: 84px;
+}
+.downlod__group {
+  background: #151526;
+  padding-top: 45px;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-bottom: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+}
+.downlod__title {
+  color: #FFB82F;
+  font-family: "Inter";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  margin-bottom: 33px;
+}
+.downlod__secondgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #111117;
+  border-radius: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 45px;
+  padding-top: 25px;
+}
+.downlod__intitle {
+  color: #FFB82F;
+  font-family: "Inter";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  margin-bottom: 45px;
+}
+.downlod__span {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.52px;
+}
+.downlod__text {
+  color: #a1a1a1;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  width: 567px;
+  height: 43px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.downlod__text2 {
+  color: #a1a1a1;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.downlod__text3 {
+  color: #a1a1a1;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.downlod__text4 {
+  color: #a1a1a1;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.downlod__posinside {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 25px;
+}
+.downlod__textgold {
+  color: #FFB82F;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  margin-bottom: 25px;
+}
+.downlod__nexttitle {
+  color: #FFB82F;
+  font-family: "Inter";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  margin-bottom: 15px;
+}
+.downlod__fourbuttons {
+  margin-bottom: 35px;
+  display: flex;
+  gap: 20px;
+}
+.downlod__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.downlod__doppatch {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 23px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.46px;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+.downlod__linklist {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.downlod__link {
+  color: #B5B7FF;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3px;
+}
+.downlod__line {
+  position: absolute;
+  top: 2475px;
+}
+
+.synthwave-laser-button {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #469DED; /* Base color */
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px #00ffe0, 0 0 15px #00ffe0, 0 0 25px #00ffe0;
+  box-shadow: inset 0 0 15px #00ffe0, 0 0 20px rgba(0, 255, 224, 0.7);
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 240px;
+  height: 55px;
+  clip-path: polygon(0% 50%, 10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%);
+}
+
+.synthwave-laser-button::before,
+.synthwave-laser-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 224, 0.6), transparent);
+  z-index: -1;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  animation: laser-glow 2.5s infinite linear;
+}
+
+.synthwave-laser-button::after {
+  animation-delay: 1.25s;
+  background: linear-gradient(90deg, transparent, #469DED 255, 0, 144, 0.6, transparent);
+}
+
+@keyframes laser-glow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.synthwave-laser-button:hover {
+  transform: translateY(-5px);
+}
+
+.synthwave-laser-button:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 0 15px #00ffe0, 0 0 25px #469DED;
+}
+
+.synthwave-laser-button1 {
+  position: relative;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #B79552; /* Base color */
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px #ffffff, 0 0 15px #00ffe0, 0 0 25px #00ffe0;
+  box-shadow: inset 0 0 15px #fbff00, 0 0 20px rgba(255, 238, 0, 0.7);
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 240px;
+  height: 55px;
+  clip-path: polygon(0% 50%, 10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%);
+}
+
+.synthwave-laser-button1::before,
+.synthwave-laser-button1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(253, 207, 0, 0.6), transparent);
+  z-index: -1;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  animation: laser-glow 2.5s infinite linear;
+}
+
+.synthwave-laser-button1::after {
+  animation-delay: 1.25s;
+  background: linear-gradient(90deg, transparent, #ed9f46 255, 0, 144, 0.6, transparent);
+}
+
+@keyframes laser-glow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.synthwave-laser-button1:hover {
+  transform: translateY(-5px);
+}
+
+.synthwave-laser-button1:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 0 15px #FFB846, 0 0 25px #fbff00;
+}
+
+.synthwave-laser-button2 {
+  position: relative;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #508B6B; /* Base color */
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px #ffffff, 0 0 15px #00ffe0, 0 0 25px #00ffe0;
+  box-shadow: inset 0 0 15px #508B6B, 0 0 20px rgba(52, 255, 1, 0.7);
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 240px;
+  height: 55px;
+  clip-path: polygon(0% 50%, 10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%);
+}
+
+.synthwave-laser-button2::before,
+.synthwave-laser-button2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 253, 34, 0.6), transparent);
+  z-index: -1;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  animation: laser-glow 2.5s infinite linear;
+}
+
+.synthwave-laser-button2::after {
+  animation-delay: 1.25s;
+  background: linear-gradient(90deg, transparent, #ed9f46 255, 0, 144, 0.6, transparent);
+}
+
+@keyframes laser-glow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.synthwave-laser-button2:hover {
+  transform: translateY(-5px);
+}
+
+.synthwave-laser-button2:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 0 15px #FFB846, 0 0 25px #56991f;
+}
+
+.synthwave-laser-button3 {
+  position: relative;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #5C94C9; /* Base color */
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px #00ffe0, 0 0 15px #00ffe0, 0 0 25px #00ffe0;
+  box-shadow: inset 0 0 15px #109283, 0 0 20px rgba(0, 255, 224, 0.7);
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 240px;
+  height: 55px;
+  clip-path: polygon(0% 50%, 10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%);
+  margin-bottom: 60px;
+}
+
+.synthwave-laser-button3::before,
+.synthwave-laser-button3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 224, 0.6), transparent);
+  z-index: -1;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  animation: laser-glow 2.5s infinite linear;
+}
+
+.synthwave-laser-button3::after {
+  animation-delay: 1.25s;
+  background: linear-gradient(90deg, transparent, #469DED 255, 0, 144, 0.6, transparent);
+}
+
+@keyframes laser-glow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.synthwave-laser-button3:hover {
+  transform: translateY(-5px);
+}
+
+.synthwave-laser-button3:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 0 15px #00ffe0, 0 0 25px #5C94C9;
+}
+
+.synthwave-laser-button4 {
+  position: relative;
+  font-size: 14.5px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #797979; /* Base color */
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px #00ffe0, 0 0 15px #00ffe0, 0 0 25px #00ffe0;
+  box-shadow: inset 0 0 15px #109283, 0 0 20px rgba(0, 255, 224, 0.7);
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 240px;
+  height: 55px;
+  clip-path: polygon(0% 50%, 10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%);
+}
+
+.synthwave-laser-button4::before,
+.synthwave-laser-button4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 224, 0.6), transparent);
+  z-index: -1;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  animation: laser-glow 2.5s infinite linear;
+}
+
+.synthwave-laser-button4::after {
+  animation-delay: 1.25s;
+  background: linear-gradient(90deg, transparent, #469DED 255, 0, 144, 0.6, transparent);
+}
+
+@keyframes laser-glow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.synthwave-laser-button4:hover {
+  transform: translateY(-5px);
+}
+
+.synthwave-laser-button4:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 0 15px #00ffe0, 0 0 25px #5C94C9;
+}
+
+.synthwave-laser-button5 {
+  position: relative;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #508B6B; /* Base color */
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px #ffffff, 0 0 15px #00ffe0, 0 0 25px #00ffe0;
+  box-shadow: inset 0 0 15px #508B6B, 0 0 20px rgba(145, 255, 1, 0.7);
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 240px;
+  height: 55px;
+  clip-path: polygon(0% 50%, 10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%);
+}
+
+.synthwave-laser-button5::before,
+.synthwave-laser-button5::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(60, 255, 0, 0.6), transparent);
+  z-index: -1;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  animation: laser-glow 2.5s infinite linear;
+}
+
+.synthwave-laser-button5::after {
+  animation-delay: 1.25s;
+  background: linear-gradient(90deg, transparent, #ed9f46 255, 0, 144, 0.6, transparent);
+}
+
+@keyframes laser-glow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.synthwave-laser-button5:hover {
+  transform: translateY(-5px);
+}
+
+.synthwave-laser-button5:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 0 15px #FFB846, 0 0 25px #56991f;
 }/*# sourceMappingURL=main.css.map */
