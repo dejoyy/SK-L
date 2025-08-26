@@ -1,0 +1,517 @@
+.donate {
+    padding-top: 175px;
+    padding-bottom: 110px;
+background-image: url(../img/bg-main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+    &__position {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 800px;
+    }
+    
+
+&__title {
+    width: 739px;
+    color: #FFB82F;
+text-shadow: 0px 0px 50px #000;
+font-family: "Noto Sans";
+font-size: 30px;
+line-height: normal;
+letter-spacing: 0.8px;
+margin-bottom: 17px;
+ text-shadow:
+    1px  0   0 #000,
+   -1px  0   0 #000,
+    0    2px 0 #000,
+    0   -2px  0 #000,
+    1px  1px 0 #000,
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px  1px 0 #000;
+}
+
+&__playbtn {
+    border: none;
+    background: none;
+    text-align: center;
+}
+
+&__playimg {
+width: 270px;
+height: 65px;
+}
+
+&__line {
+    position: absolute;
+    top: 1773px;
+}
+
+
+&__downgroups {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  top: 500px;
+    left: 50%;
+  transform: translateX(-50%);
+}
+
+&__firstgr {
+  border-radius: 20px;
+background: rgba(0, 0, 0, 0.60);
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 785px;
+height: 1171px;
+padding-right: 60px;
+padding-left: 60px;
+}
+
+&__secondtitle {
+  color: #FFB82F;
+font-family: "Inter";
+font-size: 26px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.52px;
+margin-bottom: 28px;
+margin-top: 40px;
+}
+
+&__text {
+  color: #FFF;
+font-family: "Inter";
+font-size: 18px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.36px;
+margin-bottom: 20px;
+}
+
+
+&__list {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 23px;
+}
+
+
+&__item {
+  border-radius: 5px;
+background: #252543;
+padding: 15px 25px;
+
+  color: #FFF;
+font-family: "Inter";
+font-size: 18px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.36px;
+}
+
+
+
+&__secondtext {
+  color: #FFF;
+font-family: "Inter";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.36px;
+margin-bottom: 19px;
+}
+
+
+&__paymantlist {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+
+
+&__itempay {
+  padding: 10px 25px;
+  border-radius: 5px;
+background: #252543;
+}
+
+&__thirdtext {
+  color: #FFF;
+font-family: "Inter";
+font-size: 18px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.36px;
+margin-bottom: 18px;
+}
+
+&__waytopay {
+  width: 102px;
+height: 58px;
+}
+
+
+&__choice {
+  border-radius: 5px;
+background: #252543;
+    padding: 10px 25px;
+margin-bottom: 51px;
+}
+
+&__paymant {
+  width: 102px;
+height: 58px;
+}
+
+&__inputfirst {
+  border-radius: 5px;
+border: 2px solid #FFC24C;
+background: #111117;
+padding-top: 21px;
+padding-bottom: 21px;
+padding-left: 19px;
+padding-right: 400px;
+
+color: #9797A7;
+font-family: "Inter";
+font-size: 24px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+width: 643px;
+height: 72px;
+margin-bottom: 46px;
+outline: none;
+}
+
+&__inputsecond {
+  border-radius: 5px;
+border: 2px solid #FFC24C;
+background: #111117;
+padding-top: 21px;
+padding-bottom: 21px;
+padding-left: 19px;
+padding-right: 400px;
+width: 643px;
+height: 72px;
+
+color: #9797A7;
+font-family: "Inter";
+font-size: 24px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+margin-bottom: 46px;
+outline: none;
+}
+
+&__button {
+  border-radius: 5px;
+background: #FFB82F;
+color: #FFF;
+font-family: "Inter";
+font-size: 22px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.48px;
+padding: 19px 25px;
+border: none;
+cursor: pointer;
+}
+
+
+
+&__secondgr {
+    border-radius: 20px;
+background: rgba(0, 0, 0, 0.60);
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 590px;
+height: 1172px;
+}
+
+
+&__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+&__block {
+  border-radius: 5px;
+border: 2px solid #0B7E28;
+background: linear-gradient(272deg, #91D09B 6.73%, #108114 59.31%, #0BB70B 105.16%);
+display: flex;
+padding-top: 18px;
+padding-bottom: 14px;
+padding-left: 17px; 
+}
+
+
+&__partblock {
+  margin-right: 45px;
+}
+
+
+&__partblocksecond {
+  margin-right: 170px;
+}
+
+.b1 {
+  border-radius: 5px;
+border: 1px solid #D00;
+background: linear-gradient(271deg, #C13B3E 29.94%, #DE4144 62.28%, #5B1C1D 99.3%);
+}
+
+.b2 {
+border: 1px solid #7300FF;
+background: linear-gradient(90deg, #5D15C9 0%, #A6A6A6 44.23%, #2E0A63 100%);
+}
+
+.b3 {
+border: 1px solid #5F5F5F;
+background: linear-gradient(96deg, #1F1F1F 4.81%, #858585 105.23%);
+}
+
+&__nextgrtitle {
+  color: #FFB82F;
+font-family: "Inter";
+font-size: 26px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.52px;
+margin-top: 58px;
+margin-bottom: 35px;
+}
+
+&__nexttext {
+  color: #FFF;
+text-align: center;
+font-family: "Inter";
+font-size: 18px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.36px;
+width: 492px;
+height: 66px;
+margin-bottom: 60px;
+}
+
+
+&__sum {
+font-family: "Inter";
+font-size: 13px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.3px;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+
+&__coins {
+  color: #95d568;
+font-family: "Inter";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.4px;
+}
+
+.s1 {
+  color: #ff9898;
+}
+
+.s2 {
+  color: #e4aaf7;
+}
+
+.s3 {
+  color: #fff;
+}
+    
+
+
+&__bonus {
+  font-family: "Inter";
+font-size: 13px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.3px;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+
+&__procent {
+    color: #95d568;
+font-family: "Inter";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.4px;
+}
+
+.a1 {
+  color: #ff9898;
+}
+
+.a2 {
+  color: #e4aaf7;
+}
+
+.a3 {
+  color: #fff;
+}
+}
+
+/* CSS */
+/* контейнер для абсолютного позиционирования тултипа и меток */
+.slider-container {
+  position: relative;
+  width: 640px;
+  padding-top: 30px; /* чтобы было место под тултип */
+  padding-bottom: 30px;/* для цифр снизу */
+  margin-bottom: 50px;
+}
+
+/* общий стиль самого <input type="range"> */
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 640px;
+  height: 4px;
+  border-radius: 2px;
+  background: #444; /* серый базовый фон */
+  /* заливка позади бегунка можно сделать через background-size,
+     но тут мы просто оставляем однотонный */
+  outline: none;
+  margin: 0; /* уберём встроенные отступы */
+}
+
+/* бегунок WebKit */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFC107;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+/* бегунок Firefox */
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #FFC107;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+/* …ваши стили трека и бегунка… */
+.tooltip {
+  position: absolute;
+  top: 0; left: 0;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  background: #FFC107;
+  color: #000;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+
+/* метки-тикмарки под ползунком */
+.slider-ticks {
+  position: absolute;
+  /* вместо top:20px; */
+  bottom: 20px;            /* прижмёт к низу контейнера */
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  color: #eee;
+}
+.slider-ticks span {
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.slider-widht {
+    width: 70px;
+}
+
+.value-display {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.display-value {
+  color: #fff;
+border-radius: 5px 0 0 5px;
+border: 2px solid #FFC24C;
+background: #111117;
+
+  color: #9797A7;
+font-family: "Inter";
+font-size: 24px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+width: 433px;
+height: 72px;
+padding-left: 19px;
+outline: none;
+}
+
+
+
+.display-bonus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+border-radius: 0 5px 5px 0;
+background: #FFB82F;
+  white-space: nowrap;
+width: 210px;
+height: 72px;
+
+color: #FFF;
+font-family: "Inter";
+font-size: 20px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.4px;
+}
+
+
+.between {
+  padding-bottom: 500px;
+  background: #111117;
+}
+

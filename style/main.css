@@ -21,6 +21,7 @@ h1, h2, h3, p {
 }
 
 .container {
+  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 15px;
@@ -38,6 +39,16 @@ h1, h2, h3, p {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .container {
+    width: 1300px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .container {
+    width: 1480px;
   }
 }
 @media screen and (min-width: 1890px) {
@@ -79,7 +90,7 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.34px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link:hover, .header__link:focus {
   color: #FFB846;
@@ -282,8 +293,9 @@ body {
   position: relative;
 }
 .blosksecond__position {
-  margin-left: 20px;
-  margin-bottom: 75px;
+  position: absolute;
+  top: 110px;
+  left: 70px;
 }
 .blosksecond__title {
   color: #FFB82F;
@@ -316,7 +328,7 @@ body {
   border: none;
   background: none;
   position: absolute;
-  left: 10px;
+  left: -10px;
 }
 .blosksecond__btnimg {
   width: 159px;
@@ -1376,4 +1388,447 @@ body {
 .synthwave-laser-button5:active {
   transform: scale(0.95);
   box-shadow: inset 0 0 15px #FFB846, 0 0 25px #56991f;
+}
+
+.donate {
+  padding-top: 175px;
+  padding-bottom: 110px;
+  background-image: url(../img/bg-main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.donate__position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 800px;
+}
+.donate__title {
+  width: 739px;
+  color: #FFB82F;
+  text-shadow: 0px 0px 50px #000;
+  font-family: "Noto Sans";
+  font-size: 30px;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin-bottom: 17px;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.donate__playbtn {
+  border: none;
+  background: none;
+  text-align: center;
+}
+.donate__playimg {
+  width: 270px;
+  height: 65px;
+}
+.donate__line {
+  position: absolute;
+  top: 1773px;
+}
+.donate__downgroups {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.donate__firstgr {
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 785px;
+  height: 1171px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.donate__secondtitle {
+  color: #FFB82F;
+  font-family: "Inter";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  margin-bottom: 28px;
+  margin-top: 40px;
+}
+.donate__text {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  margin-bottom: 20px;
+}
+.donate__list {
+  display: flex;
+  gap: 9px;
+  margin-bottom: 23px;
+}
+.donate__item {
+  border-radius: 5px;
+  background: #252543;
+  padding: 15px 25px;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+.donate__secondtext {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  margin-bottom: 19px;
+}
+.donate__paymantlist {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+.donate__itempay {
+  padding: 10px 25px;
+  border-radius: 5px;
+  background: #252543;
+}
+.donate__thirdtext {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  margin-bottom: 18px;
+}
+.donate__waytopay {
+  width: 102px;
+  height: 58px;
+}
+.donate__choice {
+  border-radius: 5px;
+  background: #252543;
+  padding: 10px 25px;
+  margin-bottom: 51px;
+}
+.donate__paymant {
+  width: 102px;
+  height: 58px;
+}
+.donate__inputfirst {
+  border-radius: 5px;
+  border: 2px solid #FFC24C;
+  background: #111117;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 19px;
+  padding-right: 400px;
+  color: #9797A7;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  width: 643px;
+  height: 72px;
+  margin-bottom: 46px;
+  outline: none;
+}
+.donate__inputsecond {
+  border-radius: 5px;
+  border: 2px solid #FFC24C;
+  background: #111117;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 19px;
+  padding-right: 400px;
+  width: 643px;
+  height: 72px;
+  color: #9797A7;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-bottom: 46px;
+  outline: none;
+}
+.donate__button {
+  border-radius: 5px;
+  background: #FFB82F;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  padding: 19px 25px;
+  border: none;
+  cursor: pointer;
+}
+.donate__secondgr {
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 590px;
+  height: 1172px;
+}
+.donate__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.donate__block {
+  border-radius: 5px;
+  border: 2px solid #0B7E28;
+  background: linear-gradient(272deg, #91D09B 6.73%, #108114 59.31%, #0BB70B 105.16%);
+  display: flex;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 17px;
+}
+.donate__partblock {
+  margin-right: 45px;
+}
+.donate__partblocksecond {
+  margin-right: 170px;
+}
+.donate .b1 {
+  border-radius: 5px;
+  border: 1px solid #D00;
+  background: linear-gradient(271deg, #C13B3E 29.94%, #DE4144 62.28%, #5B1C1D 99.3%);
+}
+.donate .b2 {
+  border: 1px solid #7300FF;
+  background: linear-gradient(90deg, #5D15C9 0%, #A6A6A6 44.23%, #2E0A63 100%);
+}
+.donate .b3 {
+  border: 1px solid #5F5F5F;
+  background: linear-gradient(96deg, #1F1F1F 4.81%, #858585 105.23%);
+}
+.donate__nextgrtitle {
+  color: #FFB82F;
+  font-family: "Inter";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  margin-top: 58px;
+  margin-bottom: 35px;
+}
+.donate__nexttext {
+  color: #FFF;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  width: 492px;
+  height: 66px;
+  margin-bottom: 60px;
+}
+.donate__sum {
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.donate__coins {
+  color: #95d568;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+.donate .s1 {
+  color: #ff9898;
+}
+.donate .s2 {
+  color: #e4aaf7;
+}
+.donate .s3 {
+  color: #fff;
+}
+.donate__bonus {
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.donate__procent {
+  color: #95d568;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+.donate .a1 {
+  color: #ff9898;
+}
+.donate .a2 {
+  color: #e4aaf7;
+}
+.donate .a3 {
+  color: #fff;
+}
+
+/* CSS */
+/* контейнер для абсолютного позиционирования тултипа и меток */
+.slider-container {
+  position: relative;
+  width: 640px;
+  padding-top: 30px; /* чтобы было место под тултип */
+  padding-bottom: 30px; /* для цифр снизу */
+  margin-bottom: 50px;
+}
+
+/* общий стиль самого <input type="range"> */
+.slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 640px;
+  height: 4px;
+  border-radius: 2px;
+  background: #444; /* серый базовый фон */
+  /* заливка позади бегунка можно сделать через background-size,
+     но тут мы просто оставляем однотонный */
+  outline: none;
+  margin: 0; /* уберём встроенные отступы */
+}
+
+/* бегунок WebKit */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFC107;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+/* бегунок Firefox */
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background-color: #FFC107;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+/* …ваши стили трека и бегунка… */
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  background: #FFC107;
+  color: #000;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* метки-тикмарки под ползунком */
+.slider-ticks {
+  position: absolute;
+  /* вместо top:20px; */
+  bottom: 20px; /* прижмёт к низу контейнера */
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  color: #eee;
+}
+
+.slider-ticks span {
+  position: absolute;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.slider-widht {
+  width: 70px;
+}
+
+.value-display {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.display-value {
+  color: #fff;
+  border-radius: 5px 0 0 5px;
+  border: 2px solid #FFC24C;
+  background: #111117;
+  color: #9797A7;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  width: 433px;
+  height: 72px;
+  padding-left: 19px;
+  outline: none;
+}
+
+.display-bonus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+  border-radius: 0 5px 5px 0;
+  background: #FFB82F;
+  white-space: nowrap;
+  width: 210px;
+  height: 72px;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+.between {
+  padding-bottom: 500px;
+  background: #111117;
 }/*# sourceMappingURL=main.css.map */

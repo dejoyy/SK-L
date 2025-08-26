@@ -164,8 +164,9 @@ position: relative;
 
 
 &__position {
-    margin-left: 20px;
-    margin-bottom: 75px;
+position: absolute;
+top: 110px;
+left: 70px;
 }
 
 
@@ -203,7 +204,7 @@ letter-spacing: 0.64px;
         border: none;
         background: none;
         position: absolute;
-        left: 10px;
+        left: -10px;
     }
 
     &__btnimg {
