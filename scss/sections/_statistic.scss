@@ -1,0 +1,158 @@
+.statistic {
+    padding-top: 405px;
+    padding-bottom: 400px;
+background-image: url(../img/bg-main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+
+  &__between {
+      padding-bottom: 300px;
+  background: #111117;
+  }
+
+  &__group {
+    padding-top: 50px;
+    border-radius: 20px;
+background: rgba(0, 0, 0, 0.60);
+position: absolute;
+top: 200px;
+    left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1377px;
+height: 950px;
+  }
+
+  
+  &__title {
+    color: #FFB82F;
+font-family: "Inter";
+font-size: 32px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.64px;
+margin-bottom: 35px;
+  }
+
+
+  &__listfirst {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 15px;
+  }
+
+  &__toplist {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 5px;
+  }
+
+  &__item {
+    color: #FFF;
+font-family: "Inter";
+font-size: 18px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.36px;
+border-radius: 10px;
+background: #252543;
+padding: 15px 25px;
+border: none;
+outline: none;
+transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover {
+  background: #8080b4;
+}
+
+&:focus {
+  background: #FFB82F;
+}
+  }
+
+  &__itemtop {
+    color: #FFF;
+text-align: center;
+font-family: "Inter";
+font-size: 18px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.36px;
+border-radius: 10px;
+background: #252543;
+padding: 15px 40px;
+border: none;
+outline: none;
+transition: background-color 700ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover {
+  background: #8080b4;
+}
+
+&:focus {
+  background: #FFB82F;
+}
+  }
+
+
+
+  &__linein {
+width: 900px;
+height: 1px;
+background: #22223a;
+margin-bottom: 45px;
+  }
+
+
+
+  &__col-num {
+    color: #FFF;
+font-family: "Inter";
+font-size: 20px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+padding-right: 110px;
+text-align: start;
+padding-bottom: 8px;
+  }
+  
+
+
+  &__texttabl {
+        color: #FFF;
+font-family: "Inter";
+font-size: 20px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+text-align: start;
+padding-right: 130px;
+padding-bottom: 8px;
+  }
+
+    &__texttabl2 {
+        color: #FFF;
+font-family: "Inter";
+font-size: 20px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+text-align: start;
+  }
+
+
+  &__line {
+    position: absolute;
+  }
+}
+
+.firstpl {
+    color: #FFB82F;
+}

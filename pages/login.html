@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.min.css">
+</head>
+<body>
+    <header class="login">
+        <div class="container">
+            <div class="login__center">
+            <a href="../index.html" class="login__loglinks"><img src="../img/biglogo.png" alt="biglogo" class="login__logo"></a>
+            <h2 class="login__titlestart">Авторизация</h2>
+            <p class="login__chooseserver">Выберите сервер</p>
+            <select name="" id="" class="login__selected">
+                <option value="1">x1200 [OLD]</option>
+                <option value="2">x1200 [NEW]</option>
+                <option value="3">x100 [OLD]</option>
+                <option value="4">x100 [NEW]</option>
+            </select>
+            <p class="login__email">E-Mail</p>
+            <input class="login__emailinput" type="email" name="" id="" placeholder="Введите E-Mail">
+            <div class="login__passwordgr">
+            <p class="login__password">Пароль</p>
+            <a href="" class="login__forget">Забыли пароль?</a>
+            </div>
+<div class="login__passwrap">
+  <input class="login__passwordinput" id="password" type="password" placeholder="Введите пароль">
+  <button type="button" class="login__toggle" aria-label="Показать пароль" aria-pressed="false"></button>
+</div>
+            <div class="login__savegr">
+                <input type="checkbox" name="" id="" class="login__chacksave">
+                <p class="login__titlesave">Запомнить меня?</p>
+            </div>
+            <div class="login__positionbutton">
+            <button class="login__buttonlog">Войти</button>
+        </div>
+            <div class="login__groupakk">
+                <p class="login__titlenoakk">Нет аккаунта?</p>
+                <a href="../pages/registsect.html" class="login__linkregist">Зарегистрироваться</a>
+            </div>
+
+            <div class="login__footer">
+            <h3 class="login__avtor">© 2025 L2Light.net</h3>
+            <div class="login__politic">
+                <a href="" class="login__importentlink">Пользовательское соглашение</a>
+                <a href="" class="login__importentlink">Политика конфиденциальности</a>
+            </div>
+            </div>
+        </div>
+    </header>
+    <script>
+  const pass = document.querySelector('#password');
+  const tog  = document.querySelector('.login__toggle');
+  tog.addEventListener('click', () => {
+    const show = pass.type === 'password';
+    pass.type = show ? 'text' : 'password';
+    tog.setAttribute('aria-pressed', show ? 'true' : 'false');
+    tog.setAttribute('aria-label', show ? 'Скрыть пароль' : 'Показать пароль');
+  });
+</script>
+</body>
+</html>

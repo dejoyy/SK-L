@@ -5,7 +5,7 @@
 border-radius: 40px;
 background: rgba(17, 17, 23, 0.77);
 padding-top: 70px;
-padding-bottom: 70px;
+padding-bottom: 90px;
 position: relative;
 
  &__img {
@@ -28,7 +28,7 @@ margin-bottom: 40px;
 
     &__text {
         color: #FFF;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
 text-align: center;
 font-family: "Inter";
 font-size: 26px;
@@ -50,49 +50,9 @@ background-image: url(../img/bg-main.png);
   background-size: cover;
   overflow: hidden;
 
-    &__position {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 150px;
-    }
-    
-
-&__title {
-    width: 739px;
-    color: #FFB82F;
-text-shadow: 0px 0px 50px #000;
-font-family: "Noto Sans";
-font-size: 30px;
-line-height: normal;
-letter-spacing: 0.8px;
-margin-bottom: 17px;
- text-shadow:
-    1px  0   0 #000,
-   -1px  0   0 #000,
-    0    2px 0 #000,
-    0   -2px  0 #000,
-    1px  1px 0 #000,
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-   -1px  1px 0 #000;
-}
-
-&__playbtn {
-    border: none;
-    background: none;
-    text-align: center;
-}
-
-&__playimg {
-width: 270px;
-height: 65px;
-}
-
 &__line {
     position: absolute;
-    top: 1090px;
+    top: 845px;
 }
 }
 
@@ -101,7 +61,7 @@ height: 65px;
 
 
 .downlod {
-  background-color: #111117;
+  background-color: #0E0E1A;
   padding-top: 60px;
   padding-bottom: 70px;
 
@@ -291,7 +251,7 @@ letter-spacing: 0.3px;
   
   &__line {
     position: absolute;
-    top: 2475px;
+    top: 2333px;
   }
 }
 

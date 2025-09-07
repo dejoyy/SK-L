@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.min.css">
+</head>
+<body>
+    <header class="registration">
+        <div class="container">
+            <div class="registration__center">
+            <a href="../index.html" class="registration__loglinks"><img src="../img/biglogo.png" alt="biglogo" class="registration__logo"></a>
+            <h2 class="registration__titlestart">Регистрация</h2>
+            <p class="registration__chooseserver">Имя</p>
+            <p class="registration__uslovie"></p>
+            <input class="registration__emailinput" type="email" name="" id="" placeholder="Введите своё имя">
+            <p class="registration__chooseserver">Логин Игрового Аккаунта</p>
+            <p class="registration__uslovie"></p>
+            <input class="registration__emailinput" type="email" name="" id="">
+            <p class="registration__email">E-Mail</p>
+            <input class="registration__emailinput" type="email" name="" id="" placeholder="Введите E-Mail">
+            <p class="registration__password">Пароль</p>
+            <p class="registration__uslovie"></p>
+<div class="registration__passwrap">
+  <input class="registration__passwordinput" id="password" type="password" placeholder="Введите пароль">
+  <button type="button" class="registration__toggle" aria-label="Показать пароль" aria-pressed="false"></button>
+</div>
+<p class="registration__password">Подтвердите пароль</p>
+<div class="registration__passwrap">
+  <input class="login__passwordinput" id="password" type="password" placeholder="Введите пароль ещё раз">
+  <button type="button" class="login__toggle" aria-label="Показать пароль" aria-pressed="false"></button>
+</div>
+            <div class="registration__savegr">
+                <input type="checkbox" name="" id="" class="registration__chacksave">
+                <p class="registration__titlesave">Я согласен с <a href="">Правилами</a>.</p>
+                
+            </div>
+            <div class="registration__positionbutton">
+            <button class="registration__buttonlog">Зарегистрироваться</button>
+        </div>
+            <div class="registration__groupakk">
+                <p class="registration__titlenoakk">У Вас уже есть аккаунт?</p>
+                <a href="../pages/login.html" class="registration__linkregist">Авторизоваться</a>
+            </div>
+
+            <div class="registration__footer">
+            <h3 class="registration__avtor">© 2025 L2Light.net</h3>
+            <div class="registration__politic">
+                <a href="" class="registration__importentlink">Пользовательское соглашение</a>
+                <a href="" class="registration__importentlink">Политика конфиденциальности</a>
+            </div>
+            </div>
+        </div>
+    </header>
+<script>
+  document.querySelectorAll('.registration__passwrap').forEach(wrap => {
+    const input = wrap.querySelector('.registration__passwordinput');
+    const btn   = wrap.querySelector('.registration__toggle');
+
+    btn.addEventListener('click', () => {
+      const show = input.type === 'password';
+      input.type = show ? 'text' : 'password';
+      btn.setAttribute('aria-pressed', show ? 'true' : 'false');
+      btn.setAttribute('aria-label', show ? 'Скрыть пароль' : 'Показать пароль');
+      input.focus({ preventScroll: true });
+    });
+  });
+</script>
+</body>
+</html>

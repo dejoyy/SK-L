@@ -10,8 +10,9 @@
 
     &__firstgroup {
         display: flex;
-        justify-content: space-between;
         margin-bottom: 50px;
+        justify-content: center;
+        gap: 834px;
     }
 
     &__title {

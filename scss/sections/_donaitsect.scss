@@ -12,44 +12,13 @@ background-image: url(../img/bg-main.png);
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-bottom: 800px;
+        margin-bottom: 600px;
     }
     
 
-&__title {
-    width: 739px;
-    color: #FFB82F;
-text-shadow: 0px 0px 50px #000;
-font-family: "Noto Sans";
-font-size: 30px;
-line-height: normal;
-letter-spacing: 0.8px;
-margin-bottom: 17px;
- text-shadow:
-    1px  0   0 #000,
-   -1px  0   0 #000,
-    0    2px 0 #000,
-    0   -2px  0 #000,
-    1px  1px 0 #000,
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-   -1px  1px 0 #000;
-}
-
-&__playbtn {
-    border: none;
-    background: none;
-    text-align: center;
-}
-
-&__playimg {
-width: 270px;
-height: 65px;
-}
-
 &__line {
     position: absolute;
-    top: 1773px;
+    top: 1447px;
 }
 
 
@@ -57,7 +26,7 @@ height: 65px;
   display: flex;
   gap: 25px;
   position: absolute;
-  top: 500px;
+  top: 200px;
     left: 50%;
   transform: translateX(-50%);
 }
@@ -114,7 +83,13 @@ font-size: 18px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.36px;
+cursor: pointer;
+
+&:hover {
+  background: #2f2f4e;
 }
+}
+
 
 
 
@@ -144,6 +119,11 @@ margin-bottom: 19px;
   padding: 10px 25px;
   border-radius: 5px;
 background: #252543;
+cursor: pointer;
+
+&:hover {
+  background: #2f2f4e;
+}
 }
 
 &__thirdtext {
@@ -167,6 +147,11 @@ height: 58px;
 background: #252543;
     padding: 10px 25px;
 margin-bottom: 51px;
+cursor: pointer;
+
+&:hover {
+  background: #2f2f4e;
+}
 }
 
 &__paymant {
