@@ -17,6 +17,7 @@ font-weight: 400;
 line-height: normal;
 letter-spacing: 0.24px;
 margin-bottom: 30px;
+ outline: 0;
     }
 
     &__text {
@@ -28,6 +29,7 @@ line-height: normal;
 letter-spacing: 0.24px;
 width: 655px;
 margin-bottom: 30px;
+ outline: 0;
     }
 
 
@@ -45,6 +47,12 @@ font-size: 12px;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.24px;
+transition: color 250ms;
+ outline: 0;
+
+&:hover {
+    color: #d39a28;
+}
     }
 
     &__titletwo {
@@ -55,6 +63,7 @@ letter-spacing: 0.24px;
         display: flex;
         flex-direction: column;
         gap: 11px;
+         outline: 0;
     }
 
 
@@ -65,6 +74,7 @@ font-size: 12px;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.24px;
+ outline: 0;
     }
 
     &__itemsecond {
@@ -74,5 +84,14 @@ font-size: 12px;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.24px;
+transition: color 250ms, text-shadow 300ms;
+ outline: 0;
+
+&:hover,
+:focus {
+    color: #be974e;
+          text-shadow:
+    0 3px 25px #1c6bff;
+}
     }
 }

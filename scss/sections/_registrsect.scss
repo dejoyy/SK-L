@@ -1,6 +1,6 @@
 .registration {
-        padding-top: 470px;
-    padding-bottom: 530px;
+        padding-top: 570px;
+    padding-bottom: 630px;
 background-image: url(../img/bg-main.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -29,6 +29,7 @@ background-image: url(../img/bg-main.png);
     outline: none;
     border: none;
     margin-bottom: 40px;
+    margin-top: 20px;
     transition: filter 600ms, transform 600ms;
 
     &:hover {
@@ -152,6 +153,16 @@ font-size: 15px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.34px;
+margin-bottom: 5px;
+}
+
+&__passwordsecond {
+    color: #FFF;
+font-size: 15px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.34px;
+margin-bottom: 15px;
 }
 
 &__forget {
@@ -180,6 +191,19 @@ letter-spacing: 0.34px;
     gap: 11px;
     align-items: center;
     margin-bottom: 20px;
+  }
+  
+  &__rulleslink {
+        color: #f8ae23;
+font-size: 13px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.34px;
+transition: color 380ms;
+
+&:hover {
+  color: #fc8f00;
+}
   }
 
 
@@ -293,6 +317,16 @@ margin-bottom: 20px;
 
 &__politic {
 display: flex;
+}
+
+
+&__uslovie {
+          color: #FFF;
+font-size: 12px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.34px;
+margin-bottom: 15px;
 }
 
 &__importentlink {

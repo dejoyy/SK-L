@@ -1,5 +1,5 @@
 .login {
-        padding-top: 440px;
+        padding-top: 540px;
     padding-bottom: 430px;
 background-image: url(../img/bg-main.png);
   background-position: center;
@@ -29,6 +29,7 @@ background-image: url(../img/bg-main.png);
     outline: none;
     border: none;
     margin-bottom: 40px;
+    margin-top: 20px;
     transition: filter 600ms, transform 600ms;
 
     &:hover {
@@ -277,7 +278,7 @@ transition: color 380ms;
 &__groupakk {
   display: flex;
   gap: 5px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 

@@ -17,27 +17,27 @@
             <a href="../index.html" class="registration__loglinks"><img src="../img/biglogo.png" alt="biglogo" class="registration__logo"></a>
             <h2 class="registration__titlestart">Регистрация</h2>
             <p class="registration__chooseserver">Имя</p>
-            <p class="registration__uslovie"></p>
+            <p class="registration__uslovie">(используйте латинские буквы и введите не более 14 символов)</p>
             <input class="registration__emailinput" type="email" name="" id="" placeholder="Введите своё имя">
             <p class="registration__chooseserver">Логин Игрового Аккаунта</p>
-            <p class="registration__uslovie"></p>
+            <p class="registration__uslovie">(используйте латинские буквы, цифры и введите не более 10 символов)</p>
             <input class="registration__emailinput" type="email" name="" id="">
             <p class="registration__email">E-Mail</p>
             <input class="registration__emailinput" type="email" name="" id="" placeholder="Введите E-Mail">
             <p class="registration__password">Пароль</p>
-            <p class="registration__uslovie"></p>
+            <p class="registration__uslovie">(используйте латинские буквы и введите не менее 8 символов)</p>
 <div class="registration__passwrap">
   <input class="registration__passwordinput" id="password" type="password" placeholder="Введите пароль">
   <button type="button" class="registration__toggle" aria-label="Показать пароль" aria-pressed="false"></button>
 </div>
-<p class="registration__password">Подтвердите пароль</p>
+<p class="registration__passwordsecond">Подтвердите пароль</p>
 <div class="registration__passwrap">
-  <input class="login__passwordinput" id="password" type="password" placeholder="Введите пароль ещё раз">
-  <button type="button" class="login__toggle" aria-label="Показать пароль" aria-pressed="false"></button>
+  <input class="registration__passwordinput" id="password" type="password" placeholder="Введите пароль">
+  <button type="button" class="registration__toggle" aria-label="Показать пароль" aria-pressed="false"></button>
 </div>
             <div class="registration__savegr">
                 <input type="checkbox" name="" id="" class="registration__chacksave">
-                <p class="registration__titlesave">Я согласен с <a href="">Правилами</a>.</p>
+                <p class="registration__titlesave">Я согласен с <a class="registration__rulleslink" href="">Правилами</a>.</p>
                 
             </div>
             <div class="registration__positionbutton">
@@ -64,7 +64,7 @@
 
     btn.addEventListener('click', () => {
       const show = input.type === 'password';
-      input.type = show ? 'text' : 'password';
+      input.type = show ? 'text' : 'password'; 
       btn.setAttribute('aria-pressed', show ? 'true' : 'false');
       btn.setAttribute('aria-label', show ? 'Скрыть пароль' : 'Показать пароль');
       input.focus({ preventScroll: true });

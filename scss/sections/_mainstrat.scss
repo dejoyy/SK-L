@@ -40,11 +40,24 @@ margin-bottom: 17px;
     border: none;
     background: none;
     text-align: center;
+    outline: none;
+}
+
+&__playimg2 {
+     outline: none;
 }
 
 &__playimg {
 width: 270px;
 height: 65px;
+transition: transform 700ms;
+outline: none;
+border: none;
+
+&:hover,
+:focus {
+    transform: scale(1.04);
+}
 }
 }
 
