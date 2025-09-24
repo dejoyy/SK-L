@@ -5,7 +5,20 @@
 
     &__maingroup {
         display: flex;
-        justify-content: space-around;
+        gap: 40px;
+        flex-direction: column;
+
+         @media screen and (min-width: 784px) {
+    flex-direction: row;
+  }
+
+      @media screen and (min-width: 1000px) {
+        gap: 30px;
+  }
+
+          @media screen and (min-width: 1200px) {
+justify-content: space-around;
+  }
     }
 
 
@@ -18,6 +31,11 @@ line-height: normal;
 letter-spacing: 0.24px;
 margin-bottom: 30px;
  outline: 0;
+  text-align: center;
+
+   @media screen and (min-width: 768px) {
+     text-align: start;
+  }
     }
 
     &__text {
@@ -27,18 +45,32 @@ font-size: 12px;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.24px;
-width: 655px;
+width: 100%;
 margin-bottom: 30px;
  outline: 0;
+ text-align: center;
+ 
+  @media screen and (min-width: 768px) {
+     text-align: start;
+  }
+
+ @media screen and (min-width: 1000px) {
+    width: 655px;
+  }
     }
 
 
     &__listone {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+
+         @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
     }
-
-
+    
     
     &__item {
                 color: #FFC24C;
@@ -55,6 +87,17 @@ transition: color 250ms;
 }
     }
 
+
+    &__secondside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (min-width: 768px) {
+    align-items: start;
+  }
+    }
+
     &__titletwo {
         margin-bottom: 12px;
     }
@@ -62,8 +105,24 @@ transition: color 250ms;
     &__listtwo {
         display: flex;
         flex-direction: column;
-        gap: 11px;
+        gap: 4px;
          outline: 0;
+        align-items: center;
+
+          @media screen and (min-width: 768px) {
+            gap: 11px;
+            align-items: start;
+  }
+    }
+
+    &__secondlast {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+                @media screen and (min-width: 768px) {
+    align-items: start;
+  }
     }
 
 

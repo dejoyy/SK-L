@@ -1,14 +1,19 @@
  .tables {
-  padding-top: 108px;
-  padding-bottom: 100px;
+  padding-top: 58px;
+  padding-bottom: 50px;
   position: relative;
   overflow: hidden;
+
+      @media screen and (min-width: 1000px) {
+    padding-top: 108px;
+  padding-bottom: 100px;
+  }
+  
 
   &__maingr {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
   }
 
   &::before {
@@ -34,10 +39,32 @@
     z-index: -1;
   }
 
+  &__cointgroup {
+        display: flex;
+    gap: 8px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+      @media screen and (min-width: 768px) {
+     row-gap: 40px;
+  }
+
+        @media screen and (min-width: 1000px) {
+          gap: 40px;
+  }
+
+          @media screen and (min-width: 1200px) {
+          flex-wrap: nowrap;
+  }
+  }
+
   &__line {
     position: absolute;
     top: 981px;
   }
+  
 
   &__block {
     border: 1px solid #D19722;
@@ -239,6 +266,16 @@ height: 30px;
 
 
 .lasttable {
+  display: block;
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+    @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
   &__title {
     color: #FFF;
     font-family: "Inter";
@@ -247,6 +284,27 @@ height: 30px;
     line-height: normal;
     letter-spacing: 0.35px;
     margin-bottom: 25px;
+    margin-left: 0;
+
+      @media screen and (min-width: 480px) {
+    margin-left: 10px;
+  }
+  }
+
+  &__minsocialgroup {
+    margin-left: 0;
+
+          @media screen and (min-width: 768px) {
+            margin-left: 20px;
+  }
+
+            @media screen and (min-width: 1000px) {
+            margin-left: 40px;
+  }
+
+          @media screen and (min-width: 1200px) {
+          margin-left: 10px;
+  }
   }
   
   &__socialtext {
@@ -256,19 +314,64 @@ height: 30px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.40px;
-    margin-top: 26px;
-    margin-bottom: 31px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+      @media screen and (min-width: 768px) {
+    margin-top: 245px;
+    margin-bottom: 30px;
+  }
+
+        @media screen and (min-width: 1200px) {
+          margin-top: 30px;
+  }
   }
 
   &__sociallist {
     display: flex;
-    gap: 23px;
+    gap: 19px;
+
+      @media screen and (min-width: 480px) {
+        gap: 23px;
+  }
+  }
+
+
+  &__itemlink {
+    outline: none;
+    border: none;
+        transition: transform 400ms;
+
+        &:hover,
+    &:focus {
+      transform: scale(1.03);
+    }
+  }
+
+  &__item {
+    outline: none;
+    border: none;
+    transition: transform 400ms;
+
+        &:hover,
+    &:focus {
+      transform: scale(1.03);
+
+    }
   }
 
   
   &__socialicon {
     width: 55px;
     height: 56px;
+    transition: transform 400ms;
+    outline: none;
+    border: none;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.03);
+    }
   }
 }
 

@@ -14,6 +14,23 @@
     <header class="header">
         <div class="container header__positionnav">
             <a href="./index.html" class="header__loglinks"><img src="./img/logo.png" alt="logo" class="header__logo"></a>
+
+
+                                <div data-header-modal class="header__menu is-hidden">
+            <nav class="header__menuvisible">
+                <ul class="header__menulist">
+                    <li class="header__menuitem header__focus"><a href="./index.html" class="header__focusmini">ГЛАВНАЯ</a></li>
+                    <li class="header__menuitem"><a href="./pages/statistic.html" class="header__minilink">СТАТИСТИКА</a></li>
+                    <li class="header__menuitem"><a href="./pages/about.html" class="header__minilink">О СЕРВЕРЕ</a></li>
+                    <li class="header__menuitem"><a href="" class="header__minilink">ФОРУМ</a></li>
+                    <li class="header__menuitem"><a href="./pages/donate.html" class="header__minilink">ПОЖЕРТВОВАТЬ</a></li>
+                    <li class="header__menuitem"><a href="./pages/files.html" class="header__minilink">ФАЙЛЫ</a></li>
+                    <li class="header__menuitem"><a href="./pages/login.html" class="header__minilink header__dis">ВОЙТИ</a></li>
+                    <li class="header__menuitem"><a href="./pages/registsect.html" class="header__minilink header__dis">СОЗДАТЬ АККАУНТ</a></li>
+                </ul>
+            </nav>
+</div>
+            
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item"><a href="./index.html" class="header__link header__focus">ГЛАВНАЯ</a></li>
@@ -24,23 +41,41 @@
                     <li class="header__item"><a href="./pages/files.html" class="header__link">ФАЙЛЫ</a></li>
                 </ul>
             </nav>
-            <ul class="header__reglist">
-                <li class="header__language">
+            
+            <div class="header__reglist">
+
+                <div class="header__dvij">
                     <button type="button" class="header__engbtn">
                         <img class="header__languageimg" src="./img/eng.png" alt="language">
                     </button>
-                </li>
-                <li class="header__login">
+                    <div class="header__languagebord">
+                        <img class="header__ruski" src="./img/ru.png" alt="language-second">
+                        <img class="header__ruski" src="./img/ru.png" alt="language-second">
+                    </div>
+                </div>
+
                     <a class="header__logbtn" href="./pages/login.html">ВОЙТИ</a>
-                </li>
-                <li class="header__registration">
-                    <div class="shadowback"></div>
+                    <div class="header__registgroup">
+                            <div class="shadowback"></div>
                     <a class="header__registbtn" href="./pages/registsect.html">СОЗДАТЬ АККАУНТ</a>
-                </li>
-            </ul>
+                    </div>
+
+                    <label data-modal-open  data-modal-header-open class="burger" for="burger">
+  <input data-modal-close  data-modal-header-close type="checkbox" id="burger">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+            </div>
         </div>
+
+        <div data-modal class="header__between is-hidden"></div>
     </header>
 
+                                
+    
+    
     <main>
         <section class="start">
         <div class="container">
@@ -52,6 +87,7 @@
             </div>
 
                 <div class="bloks">
+                    <div class="bloks__position">
                     <div class="bloks__firstpart">
                     <div class="bloks__strucrut radius__magic">
                         <img src="./img/magicstick.png" alt="" class="bloks__rollimg">
@@ -90,6 +126,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
                     <div class="blosksecond">
                         <div class="blosksecond__position">
@@ -102,10 +139,11 @@
         </div>
             </section>
 
-                <img src="./img/line.png" alt="line" class="tables__line">
+                <!-- <img src="./img/line.png" alt="line" class="tables__line"> -->
 
             <section class="tables">
                 <div class="container tables__maingr">
+                    <div class="tables__cointgroup">
                 <div class="tables__group">
                 <div class="tables__block">
                     <button class="tables__ratebtn"><img src="./img/ratebutton-rk.png" class="tables__ratesize" alt=""></button>
@@ -206,6 +244,7 @@
                 </div>
 
                 <div class="lasttable">
+                    <div>
                     <h3 class="lasttable__title">L2Light в Discord</h3>
                     <div>
   <div id="discord-widget">
@@ -226,22 +265,27 @@
       <a href="#" target="_blank" class="dw-join-btn">Join Discord</a>
     </div>
   </div>
+  </div>
+
                     </div>
+                    <div class="lasttable__minsocialgroup">
                     <h2 class="lasttable__socialtext">МЫ В СОЦ. СЕТЯХ</h2>
                     <div class="lasttable__group">
                         <ul class="lasttable__sociallist">
-                            <li class="lasttable__item"><a href=""><img src="./img/ds.png" alt="discord" class="lasttable__socialicon"></a></li>
-                            <li class="lasttable__item"><a href=""><img src="./img/tg.png" alt="Telegram" class="lasttable__socialicon"></a></li>
-                            <li class="lasttable__item"><a href=""><img src="./img/wk.png" alt="wk" class="lasttable__socialicon"></a></li>
-                            <li class="lasttable__item"><a href=""><img src="./img/youtube.png" alt="youtube" class="lasttable__socialicon"></a></li>
-                            <li class="lasttable__item"><a href=""><img src="./img/facebook.png" alt="facebook" class="lasttable__socialicon"></a></li>
+                            <li class="lasttable__item"><a class="lasttable__itemlink" href=""><img src="./img/ds.png" alt="discord" class="lasttable__socialicon"></a></li>
+                            <li class="lasttable__item"><a class="lasttable__itemlink" href=""><img src="./img/tg.png" alt="Telegram" class="lasttable__socialicon"></a></li>
+                            <li class="lasttable__item"><a class="lasttable__itemlink" href=""><img src="./img/wk.png" alt="wk" class="lasttable__socialicon"></a></li>
+                            <li class="lasttable__item"><a class="lasttable__itemlink" href=""><img src="./img/youtube.png" alt="youtube" class="lasttable__socialicon"></a></li>
+                            <li class="lasttable__item"><a class="lasttable__itemlink" href=""><img src="./img/facebook.png" alt="facebook" class="lasttable__socialicon"></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
 
             </section>
-            <img src="./img/line.png" alt="line" class="strimsect__linesecond">
+            <!-- <img src="./img/line.png" alt="line" class="strimsect__linesecond"> -->
             <section class="strimsect">
                 <div class="container">
                 <div class="strimsect__firstgroup">
@@ -273,6 +317,7 @@
                         <li class="footer__item"><a class="footer__item"href="">Политика конфиденциальности</a></li>
                     </ul>
                 </div>
+        
                 <div class="footer__secondside">
                     <h3 class="footer__titletwo">Сообщество</h3>
                     <ul class="footer__listtwo">
@@ -287,12 +332,14 @@
                     <ul class="footer__listtwo">
                      <li class="footer__itemsecond"><a class="footer__itemsecond" href="">Личный кабинет</a></li>
                      <li class="footer__itemsecond"><a class="footer__itemsecond" href="">Создать аккаунт</a></li>
-                     <li class="footer__itemsecond">Скачать файлы</li>
-                     <li class="footer__itemsecond">Восстановить пароль</li>
+                     <li class="footer__itemsecond"><a class="footer__itemsecond" href="">Скачать файлы</a></li>
+                     <li class="footer__itemsecond"><a class="footer__itemsecond" href="">Восстановить пароль</a></li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="./js/discord-widget.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

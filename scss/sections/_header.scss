@@ -1,11 +1,26 @@
 .header {
     background: #0E0E1A;
-    padding: 11px 0px;
+    padding: 5px 0px;
     position: relative;
       position: sticky;
   top: 0;
   z-index: 1000;
-  overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+    padding: 9px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 11px 0;
+  }
+
+    @media screen and (min-width: 1500px) {
+    padding: 15px 0;
+  }
+
+    @media screen and (min-width: 1890px) {
+    padding: 18px 0;
+  }
   
 
       animation-name: hide-on-scroll;
@@ -34,55 +49,129 @@
         width: 108px;
 height: 51px;
   filter:
-    drop-shadow(0 1px 15px rgb(161, 147, 14));
+    drop-shadow(0 1px 10px rgba(235, 212, 7, 0.61));
     outline: none;
     border: none;
+
+        @media screen and (min-width: 1890px) {
+            width: 128px;
+height: 61px;
+  }
     }
 
     &__loglinks {
-        margin-right: 50px;
             outline: none;
     border: none;
+    
+        @media screen and (min-width: 1000px) {
+    margin-right: 10px;
+  }
+
+      @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+
+    @media screen and (min-width: 1500px) {
+    margin-right: 60px;
+  }
     }
+
+
+    &__nav {
+      display: none;
+
+          @media screen and (min-width: 1000px) {
+    display: flex;
+  }
+    }
+
 
     &__list {
         display: flex;
-        gap: 20px;
+        gap: 9px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 20px;
+  }
+
+    @media screen and (min-width: 1500px) {
+    gap: 25px;
+  }
     }
+
 
     &__link {
         color: #FFF;
-font-size: 15px;
+font-size: 14px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.34px;
-transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1), text-shadow 400ms;
 outline: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+  }
+
+    @media screen and (min-width: 1500px) {
+    font-size: 17px;
+  }
 
 &:hover,
 &:focus {
     color: #FFB846;
-    text-shadow: 0px 1px 43px #FFB846;
+    text-shadow: 0px 1px 35px #ffb846da;
 }
     }
 
     &__focus {
         color: #FFB846;
-        text-shadow: 0px 1px 43px #FFB846;
+        text-shadow: 0px 1px 33px #ffb846e7;
         outline: none;
     }
 
 
     &__reglist {
         display: flex;
-        gap: 17px;
-        align-items: center;
         margin-left: auto;
+        align-items: center;
+        gap: 10px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 17px;
+  }
+
+    @media screen and (min-width: 1500px) {
+    gap: 20px;
+  }
+    }
+
+
+
+    &__dvij {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__languagelist {
+      display: flex;
+      justify-content: center;
     }
 
     &__engbtn {
         background: none;
         border: none;
+
+        &:focus + .header__languagebord,
+        &:hover + .header__languagebord {
+          opacity: 1;
+          transform: translateY(15px);
+        }
     }
 
     &__languageimg {
@@ -90,26 +179,72 @@ outline: none;
 height: 30px;
     }
 
+    &__languagebord {
+      top: 40px;
+      position: fixed;
+      background: rgba(0, 0, 0, 0.60);
+      z-index: 200;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      pointer-events: none;
+      opacity: 0;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      border-radius: 7px;
+      transition: opacity 400ms, transform 400ms;
+    }
+
+    &__ruski {
+      width: 30px;
+      height: 30px;
+    }
+
+
     &__logbtn {
         color: #FFF;
-font-size: 15px;
+font-size: 14px;
 font-weight: 500;
 line-height: normal;
 letter-spacing: 0.34px;
 outline: none;
+display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: 1500px) {
+    font-size: 17px;
+  }
 
 &:hover,
 &:focus {
     color: #FFB846;
     text-shadow: 0px 0px 43px #FFB846;
 }
+    }
 
+
+    &__registgroup {
+      position: relative;
+      display: none;
+
+        @media screen and (min-width: 768px) {
+          display: block;
+  }
     }
 
 
     &__registbtn {
-  font-size: 15;
-  padding: 10px 20px;
+  font-size: 10;
+  padding: 8px 18px;
   outline: none;
   border-radius: 0.4rem;
   cursor: pointer;
@@ -120,6 +255,16 @@ outline: none;
   transition: 800ms;
   clip-path: polygon(0% 50%, 10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%);
   outline: none;
+  
+
+    @media screen and (min-width: 1200px) { 
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+    @media screen and (min-width: 1500px) {
+    font-size: 17px;
+  }
 }
 
 
@@ -133,15 +278,181 @@ outline: none;
   background: linear-gradient(270deg, rgba(12, 65, 172, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
   color: rgb(4, 4, 38);
 }
+
+
+
+&__between {
+  display: flex;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.795);
+  width: 100%;
+  top: 61px;
+  height: 300px;
+  z-index: 1;
+  transition: opacity 400ms, transform 1s;
+
+      @media screen and (min-width: 768px) {
+      top: 69px;
+      height: 50px;
+  }
+
+      @media screen and (min-width: 1000px) {
+        display: none;
+  }
+}
+
+
+&__menu {
+  display: flex;
+  position: absolute;
+  top: 61px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 32px;
+  z-index: 2;
+  transition: opacity 400ms, transform 1s;
+  
+
+    @media screen and (min-width: 768px) {
+      padding-top: 15px;
+      top: 69px;
+      height: 50px;
+      padding-left: 90px; 
+  }
+
+      @media screen and (min-width: 1000px) {
+        display: none;
+  }
+}
+
+
+&__menulist {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+
+      @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 28px;
+  }
+}
+
+
+&__minilink {
+  font-size: 14px;
+  color: #FFF;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    color: #FFB846;
+}
+  
+      @media screen and (min-width: 768px) {
+font-size: 12px;
+  }
+}
+
+&__dis {
+  display: block;
+        @media screen and (min-width: 768px) {
+          display: none;
+  }
+}
+
+
+
+&__focusmini {
+          color: #FFB846;
+        font-size: 14px;
+
+              @media screen and (min-width: 768px) {
+font-size: 12px;
+  }
+}
 }
 
 .shadowback {
     position: absolute;
-    background: rgba(31, 215, 232, 0.7);
-    height: 20px;
+    background: rgba(31, 215, 232, 0.808);
+    height: 15px;
     width: 190px;
-    filter: blur(35px);
+    filter: blur(30px);
     z-index: 0;
-    pointer-events: none; 
+    pointer-events: none;
+    right: 1px;
+    top: 1px;
 }
 
+
+.burger {
+  position: relative;
+  width: 40px;
+  height: 26px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+transform: translateY(-20px);
+}

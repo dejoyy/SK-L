@@ -10,9 +10,28 @@
 
     &__firstgroup {
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         justify-content: center;
-        gap: 834px;
+        flex-wrap: wrap;
+        gap: 20px;
+
+          @media screen and (min-width: 480px) {
+gap: 60px;
+margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 206px;
+  }
+
+    @media screen and (min-width: 1000px) {
+    gap: 615px;
+  }
+
+          @media screen and (min-width: 1200px) {
+    gap: 820px;
+  }
+
     }
 
     &__title {
@@ -49,15 +68,34 @@ transition: transform 600ms;
     &__addgroup {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
         justify-content: center;
+        flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    gap: 30px;
+  }
+
+
+        @media screen and (min-width: 1200px) {
+            gap: 25px;
+  }
+
     }
 
     &__square {
         border-radius: 0.375px;
 border: 2px solid #FFF;
 background: #000;
-padding: 69px 118px;
+padding: 65px 110px;
+
+    @media screen and (min-width: 1000px) {
+        padding: 55px 90px;
+  }
+
+@media screen and (min-width: 1200px) {
+    padding: 69px 118px;
+  }
     }
 
     &__plusimg {

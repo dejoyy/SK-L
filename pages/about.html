@@ -14,31 +14,63 @@
     <header class="header">
         <div class="container header__positionnav">
             <a href="../index.html" class="header__loglinks"><img src="../img/logo.png" alt="logo" class="header__logo"></a>
+
+
+                                <div data-header-modal class="header__menu is-hidden">
+            <nav class="header__menuvisible">
+                <ul class="header__menulist">
+                    <li class="header__menuitem header__focus"><a href="../index.html" class="header__minilink">ГЛАВНАЯ</a></li>
+                    <li class="header__menuitem"><a href="../pages/statistic.html" class="header__minilink">СТАТИСТИКА</a></li>
+                    <li class="header__menuitem"><a href="../pages/about.html" class="header__focusmini">О СЕРВЕРЕ</a></li>
+                    <li class="header__menuitem"><a href="" class="header__minilink">ФОРУМ</a></li>
+                    <li class="header__menuitem"><a href="../pages/donate.html" class="header__minilink">ПОЖЕРТВОВАТЬ</a></li>
+                    <li class="header__menuitem"><a href="../pages/files.html" class="header__minilink">ФАЙЛЫ</a></li>
+                    <li class="header__menuitem"><a href="../pages/login.html" class="header__minilink header__dis">ВОЙТИ</a></li>
+                    <li class="header__menuitem"><a href="../pages/registsect.html" class="header__minilink header__dis">СОЗДАТЬ АККАУНТ</a></li>
+                </ul>
+            </nav>
+</div>
+            
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item"><a href="../index.html" class="header__link">ГЛАВНАЯ</a></li>
-                    <li class="header__item"><a href="./statistic.html" class="header__link">СТАТИСТИКА</a></li>
-                    <li class="header__item"><a href="./about.html" class="header__link header__focus">О СЕРВЕРЕ</a></li>
+                    <li class="header__item"><a href="../pages/statistic.html" class="header__link">СТАТИСТИКА</a></li>
+                    <li class="header__item"><a href="../pages/about.html" class="header__link header__focus">О СЕРВЕРЕ</a></li>
                     <li class="header__item"><a href="" class="header__link">ФОРУМ</a></li>
-                    <li class="header__item"><a href="./donate.html" class="header__link">ПОЖЕРТВОВАТЬ</a></li>
-                    <li class="header__item"><a href="./files.html" class="header__link">ФАЙЛЫ</a></li>
+                    <li class="header__item"><a href="../pages/donate.html" class="header__link">ПОЖЕРТВОВАТЬ</a></li>
+                    <li class="header__item"><a href="../pages/files.html" class="header__link">ФАЙЛЫ</a></li>
                 </ul>
             </nav>
-            <ul class="header__reglist">
-                <li class="header__language">
+            
+            <div class="header__reglist">
+
+                <div class="header__dvij">
                     <button type="button" class="header__engbtn">
                         <img class="header__languageimg" src="../img/eng.png" alt="language">
                     </button>
-                </li>
-                <li class="header__login">
-                    <a class="header__logbtn" href="./login.html">ВОЙТИ</a>
-                </li>
-                <li class="header__registration">
-                    <div class="shadowback"></div>
-                    <a class="header__registbtn" href="./registsect.html">СОЗДАТЬ АККАУНТ</a>
-                </li>
-            </ul>
+                    <div class="header__languagebord">
+                        <img class="header__ruski" src="../img/ru.png" alt="language-second">
+                        <img class="header__ruski" src="../img/ru.png" alt="language-second">
+                    </div>
+                </div>
+
+                    <a class="header__logbtn" href="../pages/login.html">ВОЙТИ</a>
+                    <div class="header__registgroup">
+                            <div class="shadowback"></div>
+                    <a class="header__registbtn" href="../pages/registsect.html">СОЗДАТЬ АККАУНТ</a>
+                    </div>
+
+                    <label data-modal-open  data-modal-header-open class="burger" for="burger">
+  <input data-modal-close  data-modal-header-close type="checkbox" id="burger">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+            </div>
         </div>
+
+        <div data-modal class="header__between is-hidden"></div>
     </header>
 
     <main>        
@@ -210,5 +242,7 @@
         </div>
     </footer>
     <script src="../js/donate.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/modal.js"></script>
 </body>
 </html>

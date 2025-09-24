@@ -1,11 +1,37 @@
 .donate {
     padding-top: 175px;
     padding-bottom: 110px;
-background-image: url(../img/bg-main.png);
+background-image: url(../img/bg-mobile-1x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image:
+      url(../img/bg-mobile-2x.png);
+  }
+
+  @media (min-width: 768px) {
+    background-image:
+      url(../img/bg-tablet-1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image:
+        url(../img/bg-tablet-2.png);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    background-image:
+      url(../img/bg-desktop-1x.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image:
+        url(../img/bg-desktop-2x.png);
+    }
+  }
+
 
     &__position {
         display: flex;
@@ -166,7 +192,6 @@ background: #111117;
 padding-top: 21px;
 padding-bottom: 21px;
 padding-left: 19px;
-padding-right: 400px;
 
 color: #9797A7;
 font-family: "Inter";
@@ -187,7 +212,6 @@ background: #111117;
 padding-top: 21px;
 padding-bottom: 21px;
 padding-left: 19px;
-padding-right: 400px;
 width: 643px;
 height: 72px;
 
