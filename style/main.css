@@ -73,8 +73,8 @@ html, body {
 
 .header {
   background: #0E0E1A;
+  position: relative;
   padding: 5px 0px;
-  position: sticky;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -511,11 +511,6 @@ html, body {
 @media (min-width: 1200px) {
   .start {
     background-image: url(../img/bg-desktop-1x.png);
-  }
-}
-@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi) {
-  .start {
-    background-image: url(../img/bg-desktop-2x.png);
   }
 }
 .start__position {

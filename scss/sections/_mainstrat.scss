@@ -26,11 +26,6 @@ background-image: url(../img/bg-mobile-1x.png);
   @media (min-width: 1200px) {
     background-image:
       url(../img/bg-desktop-1x.png);
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image:
-        url(../img/bg-desktop-2x.png);
-    }
   }
 
 
