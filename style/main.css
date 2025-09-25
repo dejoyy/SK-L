@@ -67,6 +67,10 @@ body {
   font-family: "Roboto";
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .header {
   background: #0E0E1A;
   padding: 5px 0px;
